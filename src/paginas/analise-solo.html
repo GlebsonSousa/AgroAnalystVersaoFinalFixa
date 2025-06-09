@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style/analise.css">
+    <link rel="stylesheet" href="/src/js/volta-para-home.js">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+
+    <title>AgroAnalyst - Análise de Solo</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/src/js/analise-script.js"></script>
+</head>
+
+<body>
+    <!-- Início do conteúdo principal -->
+
+    <div id="nav-bar">
+        <div id="area-logo">
+            <img id="logo" src="/src/img/agrVAIIIIIIIIIIIIIIIIIIIIII.jpg" alt="">
+        </div>
+        <div id="area-navegacao">
+            <a href="/index.html">Inicio</a>
+            <a href="/src/paginas/quemSomos/quemSomos.html">Sobre nós</a>
+            <a href="/src/paginas/marketplace.html">Marketplace</a>
+            <a href="/src/paginas/time.html">Time</a>
+        </div>
+        <div class="login-cadastro">
+            <button id="login">Entrar</button>
+            <a id="cadastro">Cadastro</a>
+        </div>
+    </div>
+
+    <div class="analise">
+        <!-- Título e explicação -->
+        <div class="titulo-analise">
+            <h2 id="titulo-analise-solo">Análise de Solo Personalizada</h2>
+            <p id="descricao-analise-solo">
+                Obtenha informações detalhadas sobre o solo da sua região e descubra as culturas mais adequadas para o cultivo.
+            </p>
+            <!-- Campo de entrada + botão -->
+            <div class="input-analise">
+                <input id="input-cidade" type="text" placeholder="Digite o nome da cidade ou use sua localização atual">
+                <button id="botao-analisar-solo">Analisar Solo</button>
+            </div>
+        </div>
+
+        <!-- Colunas com os resultados da análise -->
+        <div class="conteudo-analise">
+            
+            <!-- Coluna esquerda: informações sobre o solo -->
+            <div class="coluna-esquerda">
+                <p><strong>Região:</strong> <span id="regiao">Sul</span></p>
+                <p><strong>Estado:</strong> <span id="estado">Rio Grande do Sul</span></p>
+                <p><strong>Área:</strong> <span id="cidade">Porto Alegre</span></p>
+                <p><strong>Tipo de Solo:</strong> <span id="tipo-solo">Argiloso</span></p>
+                <p><strong>Clima Predominante:</strong> <span id="clima">Subtropical</span></p>
+
+                <p id="titulo-caracteristicas"><strong>Características do Solo:</strong></p>
+                <ul id="lista-caracteristicas">
+                    <li>Textura: <span id="textura">Média</span></li>
+                    <li>Drenagem: <span id="drenagem">Moderada</span></li>
+                    <li>PH: <span id="ph">5,8</span></li>
+                    <li>Fertilidade: <span id="fertilidade">Alta</span></li>
+                </ul>
+            </div>
+
+            <div class="separa">
+                <span></span>
+            </div>
+
+            <!-- Coluna direita: culturas recomendadas -->
+            <div class="coluna-direita">
+                <h3 id="titulo-culturas">Culturas Recomendadas</h3>
+                <ul id="lista-culturas">
+                    <li>🌽 Milho</li>
+                    <li>🌱 Soja</li>
+                    <li>🌾 Trigo</li>
+                </ul>
+
+                <!-- Imagem do mapa -->
+                <div class="area-mapa">
+                    <div id="mini-mapa" style="width: 100%; height: 100%; display: none;"></div>
+                    <img id="mapa-imagem" src="/src/img/regiao.png" alt="">
+                </div>
+            </div>
+        </div> <!-- Fim das colunas -->
+
+        <div id="chuva">
+            <h2>Precipitação na região</h2>
+            <p> Abaixo está a média mensal de precipitação (chuva) para a sua região, medida em milímetros (mm).</p>
+            <div class="container-grafico-chuva">
+              <canvas id="grafico-chuva"></canvas>
+            </div>
+        </div>
+
+        <!-- Início do rodapé -->
+        <div class="rodape" id="contato">
+            <div class="container-rodape">
+                <p>&copy; 2025 AgroAnalyst. Todos os direitos reservados.</p>
+                <p>Contato: <a href="mailto:contato@agroanalyst.com">contato@agroanalyst.com</a></p>
+            </div>
+        </div>
+    </div> 
+    
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+</body>
+</html>

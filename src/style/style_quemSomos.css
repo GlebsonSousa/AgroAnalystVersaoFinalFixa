@@ -1,0 +1,365 @@
+/*Fonte do titulo*/
+@font-face {
+    font-family: Barrio;
+    src: url(/src/fonts/font-home/BreeSerif-Regular.ttf)
+}   
+
+/*Fonte dos textos de navegação*/
+@font-face {
+    font-family: seasons;
+    src: url(/src/fonts/font-home/Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf)
+} 
+
+@font-face {
+    font-family: marry;
+    src: url(/src/fonts/font-home/Merriweather-VariableFont_opsz\,wdth\,wght.ttf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-self: center;
+    min-height: 100vh;
+    background-color: #F2F0EB;
+}
+
+/*Define as propriedades gerais da página*/
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 1200px;
+    min-width: 700px;
+    min-height: 100vh;
+    background-color: #F2F0EB;
+    z-index: 0;
+}
+
+/*Define as propriedades da nav-bar*/
+#nav-bar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 90%;
+    height: 70px;
+    min-width: 700px;
+    max-width: 1200px;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 35px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+/*Espaço especifico da logo*/
+#area-logo {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    max-width: 400px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#area-logo img{
+    max-height: 150%;
+    width: fit-content;
+    transform: scale(160%);
+}
+
+/*Area para edição da area de navegação da nav-bar*/
+#area-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%; 
+    height: 100%;   
+}
+
+#area-navegacao a{
+    font-family: Barrio;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    transition: ease-in-out 0.3s;
+    
+}
+
+#area-navegacao a:hover {
+    color: #056F33;
+
+}
+
+/* Estilizando o contêiner */
+.login-cadastro {
+    display: flex;
+    gap: 2rem;
+    width: 20%; /* Definindo a largura do contêiner como 20% */
+    height: auto;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+/* Estilizando o botão de login */
+#login {
+    background-color: green; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    border: none; /* Removendo borda */
+    padding: 10px 50px;
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Mudando o cursor para indicar que é clicável */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+    font-family: Barrio;
+}
+
+/* Estilizando o botão de login quando o mouse passar sobre ele */
+#login:hover {
+    background-color: darkgreen; /* Cor de fundo mais escura quando o mouse passa por cima */
+}
+
+/* Estilizando o link de cadastro */
+#cadastro {
+    display: block; /* Fazendo o link ser exibido em um bloco (abaixo do botão) */
+    color: #515150; /* Cor do texto preto */
+    text-decoration: none; /* Removendo o sublinhado do link */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Barrio;
+}
+
+/* Alterando a cor do link quando o mouse passa por cima */
+#cadastro:hover {
+    color: green; /* Mudando a cor para verde quando o mouse passa por cima */
+    cursor: pointer;
+}
+
+/*Fim da esilização da nav-bar*/
+
+/*esta div é a div pai da parte principal da pagina home*/
+.conteudo {
+    display: flex;
+    margin-top: 10rem;
+    height: calc(100vh - 70px);
+    height: 90vh;
+    max-height: 90vh;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Tudo que esta dentro da div area esquerda*/
+.area-esquerda {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 6rem;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#h1-padrao {
+    font-family: Barrio;
+    max-width: 90%;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#h1-padrao span {
+    font-family: Barrio;
+}
+
+#barra-separar {
+    width: 200px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: #FFD114;
+    margin-top: 2rem;
+}
+
+
+#texto-verde{
+    color: #034C1B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.area-esquerda p {
+    padding-top: 1.5rem ;
+    font-family:marry;
+    font-size: 16px;
+    color: #515150;
+}
+
+/*Div que cuida da area em que o botao FALE CONOSCO ficará*/
+.area-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.area-btn button {
+    background-color: #056F33;
+    color: white;
+    width: 200px;
+    height: 45px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.3s;
+}   
+
+.area-btn button:hover {
+    background-color: #034C1B;
+}
+
+.area-direita {
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: start;
+    padding-left: 10%;
+    width: 50%;
+    height: 80%;
+}
+
+.area-imagens {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-imagens img {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    inset: 0;
+    margin: auto;
+}
+
+#img-colheita {
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#trevo {
+    animation: girar 30s linear infinite, zoom 5s ease-in-out infinite;
+}
+
+/*Pagina 2 - trator*/
+.fundo_da_pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("/src/img/trator3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*esta div é dos textos da página*/
+.corpo {
+    display:flex;
+    height: calc(100% - 70px);
+    width: 90%;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.lado_direito {
+    display: flex;
+    justify-content: end;
+    padding-top: 2rem;
+    font-family: Barrio;
+    width: 55%;
+    height: 70%;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#texto-superior {
+    font-family: Barrio;
+    font-size: 45px;
+    font-weight: 400;
+    color: white;
+}
+
+.lado_direito p {
+    margin-top: 2rem;
+    font-size: 25px;
+    width: 90%;
+}
+
+
+
+
+/*Area de edição para adequação a dispositivos com diferentes telas*/
+@media(max-width: 1000px) {
+    #area-logo img{
+        margin-left: 2rem;
+        transform: scale(130%);
+        margin-bottom: 3.5%;
+    }
+
+    #h1-padrao {
+        font-family: Barrio;
+        max-width: 90%;
+        font-size: 45px;
+        font-weight: 400;
+    }
+
+    #barra-separar {
+        display: block;
+        width: 200px;
+        height: 2px;
+        border-radius: 6px;
+        background-color: #FFD114;
+        margin-top: 2rem;
+    }
+
+
+}
+
+/*Esta area serve para criar as animações do trevo*/
+/*Para girar 360 graus */
+@keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/*Para dar zoom*/
+  @keyframes zoom {
+    0%, 100% {
+      scale: 1;
+    }
+    50% {
+      scale: 1.3;
+    }
+  }

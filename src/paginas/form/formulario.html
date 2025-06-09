@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="/src/paginas/form/src/style/style.css">
+    <script defer src="/src/js/cadastro.js"></script>
+</head>
+<body>
+
+    <div class="formulario">
+        <div class="cadastro1">
+            <div class="area-btn">
+                <img id="voltar" src="/src/img/voltar.png" alt="">
+            </div>
+
+            <form id="form">
+                <fieldset>
+                    <legend id="cabecalho">Preencha seus dados abaixo:</legend>
+                    <center><h1><b>Cadastro</b></h1></center>
+
+                    <label><b>Coloque seu nome:</b></label><br>
+                    <input class="caixa" type="text" id="txt_nome_usuario" placeholder="Digite seu nome" size="60" maxlength="60" required><p>
+
+                    <label><b>Coloque aqui seu e-mail:</b></label><br>
+                    <input class="caixa" type="email" id="txt_email_usuario" placeholder="Informe seu email" size="60" maxlength="100" required><p>                        
+
+                    <label><b>Informe sua data de nascimento:</b></label><br>
+                    <input class="caixa" type="date" id="dte_nasc_usuario" required><p>
+
+                    <label><b>Informe seu CPF:</b></label><br>
+                    <input class="caixa" type="text" id="num_cpf_usuario" placeholder="Informe seu CPF" maxlength="11" required><p>
+
+                    <label><b>Informe seu número de telefone:</b></label><br>
+                    <input class="caixa" type="text" id="num_tell_usuario" placeholder="ex: (11) 95588-9462" maxlength="11" required><p>
+
+                    <input id="btn-continuar" type="button" value="CONTINUAR"> &nbsp;&nbsp;
+                    <input class="btn-limpar" type="reset" value="LIMPAR">
+                </fieldset>     
+            </form>
+        </div>
+
+        <div class="cadastro2" style="display: none;">
+            <form id="form-confirmacao">
+                <fieldset>
+                    <legend>Etapa de confirmação:</legend>
+                    <center><h1><b>Continue seu Cadastro</b></h1></center>
+
+                    <label><b>Crie uma senha:</b></label><br>
+                    <input class="caixa" type="password" placeholder="Digite sua senha" name="txt_senha_usuario" id="txt_senha_usuario" minlength="8" maxlength="72" required><p>
+
+                    <label><b>Confirme sua senha:</b></label><br>
+                    <input class="caixa" type="password" placeholder="Confirme a senha" name="txt_senha_confirma" id="txt_senha_confirma" minlength="8" maxlength="72" required><p>
+
+                    <label><b>Informe um e-mail de confirmação:</b></label><br>
+                    <input class="caixa" type="email" placeholder="Informe um email para recuperação" name="Txt_confirma_email" id="txt_confirma_email" size="60" maxlength="60" required><p>
+
+                    <input id="btn-confirmar" type="submit" value="CONFIRMAR"> &nbsp;&nbsp;
+                    <input class="btn-limpar" type="reset" value="LIMPAR"> 
+                    <input id="voltar-form" type="button" value="VOLTAR">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

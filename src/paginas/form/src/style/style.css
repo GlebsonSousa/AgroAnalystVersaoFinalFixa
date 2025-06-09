@@ -1,0 +1,164 @@
+/*Fonte do titulo*/
+@font-face {
+    font-family: Barrio;
+    src: url(../fonts/font-home/BreeSerif-Regular.ttf)
+}   
+
+/*Fonte dos textos de navegação*/
+@font-face {
+    font-family: seasons;
+    src: url(../fonts/font-home/Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf)
+} 
+
+@font-face {
+    font-family: marry;
+    src: url(/src/fonts/font-home/Merriweather-VariableFont_opsz\,wdth\,wght.ttf)
+}
+
+
+* {
+    border: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/img/fundo-cadastro.avif);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+
+.area-btn {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.area-btn img{
+    margin-top: 25px;
+    width: 35px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.area-btn img:active {
+    transform: scale(95%);
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    max-height: 80vh;
+    justify-content: center;
+    background-color: #f2f0eb;
+    font-family: marry;
+    font-size: medium;
+    padding: 40px 40px;
+    border-radius: 25px;
+}
+
+#cabecalho{
+    font-family: Barrio;
+    font-weight: 400;
+}
+
+.formulario h1{
+    font-family: Barrio;
+    font-size: 40px;
+}
+
+.cadastro1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: marry;
+    font-weight: bold;
+}
+
+.caixa {
+    font-family: barrio;
+    font-weight: 550;
+    border-radius: 20px;
+    border: none;
+    padding-left: 1rem;
+    color: #8a8989;
+    height: 30px;
+}
+
+#btn-continuar, #btn-limpar, #btn-confirmar, #btn-entrar{
+    justify-content: start;
+    background-color: #056F33;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: barrio;
+    font-weight: 200;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    padding: 10px 50px;
+}
+
+#voltar-form{
+    justify-content: start;
+    background-color: #5d615f;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: barrio;
+    font-weight: 200;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    padding: 5px 15px;
+    margin-left: 15px;
+}
+
+.btn-limpar{
+    justify-content: start;
+    background-color: #5d615f;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: barrio;
+    font-weight: 200;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    padding: 10px 50px;
+}
+
+.btn-limpar:hover{
+    background-color: #868a87;
+    cursor: pointer;
+}
+
+
+#btn-continuar:hover, #btn-confirmar:hover,  #btn-entrar:hover{
+    background-color: #034C1B;
+    cursor: pointer;
+}
+
+#btn-continuar:active, #btn-confirmar:active {
+    transform: scale(96%);
+}
+
+
+
+.cadastro2 {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.area-btn-baixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
